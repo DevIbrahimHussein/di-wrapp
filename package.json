@@ -1,0 +1,26 @@
+{
+  "name": "di-wrapp",
+  "version": "1.0.0",
+  "description": "Di wrapp startup",
+  "main": "index.js",
+  "scripts": {
+    "start": "node di-wrapp",
+    "server": "nodemon di-wrapp",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "Ibrahim Hussein",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "create-react-app": "^3.4.1",
+    "express": "^4.17.1",
+    "node-sass": "^4.14.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
